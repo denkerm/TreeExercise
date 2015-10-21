@@ -20,7 +20,9 @@ def main(num_rows):
 def makeCurrentRow(cur_row):
 	next_row = [];
 	if (len(cur_row) == 0):
-		return root = Node(1, None, None)
+		root = Node(1, None, None)
+		next_row.append(root)
+		return next_row
 
 	else:
 		x = 0;
@@ -45,5 +47,5 @@ def makeCurrentRow(cur_row):
 			next_row.append(cur_row[x].r_child)
 
 
-	return next_row;
+		return next_row;
 		
